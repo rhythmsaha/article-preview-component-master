@@ -19,7 +19,7 @@ body {
 }
 
 main {
-  margin: 5vh auto;
+  margin: 8vh auto;
   width: 90%;
   max-width: 800px;
 }
@@ -33,7 +33,6 @@ main {
 section {
   background: white;
   border-radius: 15px;
-  overflow: hidden;
   -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -51,12 +50,14 @@ section {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 15px 15px 0 0;
 }
 
 @media screen and (min-width: 1024px) {
   .image {
     width: 350px;
     height: auto;
+    border-radius: 15px 0 0 15px;
   }
 }
 
@@ -73,7 +74,7 @@ section {
 
 @media screen and (min-width: 1024px) {
   .container {
-    padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+    padding: 2.5rem;
   }
 }
 
@@ -115,6 +116,7 @@ section {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
+  position: relative;
 }
 
 .profile img {
@@ -145,6 +147,7 @@ section {
 }
 
 .icon {
+  position: relative;
   height: 40px;
   width: 40px;
   background: var(--primary-light);
